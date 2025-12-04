@@ -1,0 +1,33 @@
+# from Funktsioon_file import *
+# print("Arvutame ruudu pindala ja ümbermõõdu!")
+
+# külg=float_kontroll(input("Sisesta ruudu külje pikkus: "))
+# ümbermõõt,pindala,diagonaal=square(külg)
+# print(f"Ruudu külg: {külg}")
+# print(f"Ruudu ümbermõõt: {ümbermõõt}")
+# print(f"Ruudu pindala: {pindala}")
+# print(f"Ruudu diagonaal: {diagonaal}")
+
+
+# for i in range(3):
+#     aasta=int_kontroll(input("Sisesta aasta: "))
+#     if is_year_leap(aasta):
+#         print(f"{aasta} on liigaasta")
+#     else:
+#         print(f"{aasta} on tavaline aasta")
+
+
+
+
+
+# from Funktsioon_file import *
+# print("Lahendame/testime 5 arvutehet!")
+# for i in range(5):
+    
+#     arv1=float_kontroll(input("Sisesta esimene arv"))
+#     arv2=float_kontroll(input("Sisesta teine arv"))
+
+#     t=input("Sisesta tehe (+,-,*,/): ")
+#     tulemus=arithmetic(arv1,arv2,t)
+#     print(f"{arv1}{t}{arv2} = {tulemus}")
+

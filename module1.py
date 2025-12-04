@@ -1,15 +1,15 @@
 
-import msvcrt
-#Sisestamise ajal asendatakse kõik tähted @-märgiga
-täht=""
-while True:
-    t=msvcrt.getwch()
-    print(t.replace(t,"*")),end="",flush=True)
-    täht+=t
-    if t=='\r': #Enter
-        break
-print()
-print(täht)
+# import msvcrt
+# Sisestamise ajal asendatakse kõik tähted @-märgiga
+# täht=""
+# while True:
+#     t=msvcrt.getwch()
+#     print(t.replace(t,"*")),end="",flush=True)
+#     täht+=t
+#     if t=='\r': #Enter
+#         break
+# print()
+# print(täht)
 
 
 #list-loend
