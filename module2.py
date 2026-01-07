@@ -11,12 +11,11 @@ def saada_email(saaja_email):
     port=587 #465
     context=ssl.create_default_context()
     msg=EmailMessage()
+    msg.set_content(kiri.subtype='html')
     msg.set_content(kiri)
     msg["Subject"]=teema
     msg["From"]=saatja_email
     msg["To"]=saaja_email
-    with open('image.png', 'rb') as file:
-        image_data = file.read()
     try:
         with smtplib.SMTP(smtp_server,port) as server:
             server.starttls(context=context)
