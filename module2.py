@@ -1,6 +1,5 @@
 import smtplib, ssl
 from email.message import EmailMessage
-import inghdr
 #https://myaccount.google.com/apppasswords
 def saada_email(saaja_email):
     kiri="Tere! See on test e-kiri Pythonist"
@@ -11,11 +10,13 @@ def saada_email(saaja_email):
     port=587 #465
     context=ssl.create_default_context()
     msg=EmailMessage()
-    msg.set_content(kiri.subtype='html')
-    msg.set_content(kiri)
+    msg.set_content(kiri,subtype='html')
     msg["Subject"]=teema
     msg["From"]=saatja_email
     msg["To"]=saaja_email
+    with open("image.png, rb") as f:
+        image_data = f.read()
+    msg.add_attachment(image_data, maintype="image", subtype="png")
     try:
         with smtplib.SMTP(smtp_server,port) as server:
             server.starttls(context=context)
